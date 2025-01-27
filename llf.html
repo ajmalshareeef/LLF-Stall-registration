@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litera Literature Fest - Stall Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(30, 58, 95, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            transform: scale(1);
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0d47a1, #1565c0);
+            color: #fff;
+            padding: 25px;
+        }
+
+        .header h1 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .content p {
+            margin-bottom: 25px;
+            font-size: 1em;
+            color: #e3f2fd;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 15px;
+            font-size: 1em;
+            color: #fff;
+            border-radius: 30px;
+            background-color: #1976d2;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+            text-align: center;
+        }
+
+        .buttons a:hover {
+            background-color: #0d47a1;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.85em;
+            color: #b0bec5;
+            padding: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Litera Literature Fest</h1>
+            <p>Hosted by SAFI Readers' Forum and RAFTHA Students' Union</p>
+        </div>
+        <div class="content">
+            <p>Welcome to the Litera Literature Fest! If you are interested in showcasing your stall, please proceed with the registration below.</p>
+            <div class="buttons">
+                <a href="https://forms.gle/pbEXyp18r2fB6tLAA" target="_blank">Registration for SAFI Students</a>
+                <a href="https://forms.gle/UbQc9AZLCW5dxs4aA" target="_blank">Registration for Individuals Outside SAFI</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 SAFI Readers' Forum & RAFTHA Students' Union. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
