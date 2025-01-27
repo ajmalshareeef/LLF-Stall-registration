@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Litera Literature Fest - Stall Registration</title>
+    <!-- Link to Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
+        /* Global Reset */
         * {
             margin: 0;
             padding: 0;
@@ -12,9 +15,8 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            font-family: 'Poppins', sans-serif; /* Updated font */
+            background: linear-gradient(135deg, #0d47a1, #1565c0);
             color: #fff;
             display: flex;
             justify-content: center;
@@ -24,25 +26,72 @@
         }
 
         .container {
-            background: rgba(30, 58, 95, 0.9);
+            background: rgba(30, 58, 95, 0.95);
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
             overflow: hidden;
             width: 100%;
-            max-width: 400px;
+            max-width: 420px;
             text-align: center;
-            transform: scale(1);
-            transition: transform 0.3s;
+            position: relative;
         }
 
-        .container:hover {
-            transform: scale(1.02);
+        /* Decorative Bubbles */
+        .decorative {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            z-index: 0;
+            animation: float 5s infinite alternate ease-in-out;
+        }
+
+        .decorative:nth-child(2) {
+            top: auto;
+            bottom: -20px;
+            right: -20px;
+            animation-delay: 2s;
+        }
+
+        .decorative:nth-child(3) {
+            top: 10%;
+            left: 10%;
+            animation-delay: 1.5s;
+        }
+
+        .decorative:nth-child(4) {
+            top: 70%;
+            left: 20%;
+            animation-delay: 3s;
+        }
+
+        .decorative:nth-child(5) {
+            top: 50%;
+            right: 10%;
+            animation-delay: 1s;
+        }
+
+        .decorative:nth-child(6) {
+            top: 30%;
+            right: 30%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(20px);
+            }
         }
 
         .header {
-            background: linear-gradient(135deg, #0d47a1, #1565c0);
+            background: linear-gradient(135deg, #1976d2, #1e88e5);
             color: #fff;
             padding: 25px;
+            z-index: 1;
         }
 
         .header h1 {
@@ -57,6 +106,7 @@
 
         .content {
             padding: 20px;
+            z-index: 1;
         }
 
         .content .description {
@@ -71,13 +121,13 @@
         .content p {
             margin-bottom: 20px;
             font-size: 1em;
-            color: #e3f2fd;
         }
 
         .buttons {
             display: flex;
             flex-direction: column;
             gap: 15px;
+            z-index: 1;
         }
 
         .buttons a {
@@ -86,14 +136,14 @@
             font-size: 1em;
             color: #fff;
             border-radius: 30px;
-            background-color: #1976d2;
+            background-color: #42a5f5;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             transition: background-color 0.3s, transform 0.3s;
             text-align: center;
         }
 
         .buttons a:hover {
-            background-color: #0d47a1;
+            background-color: #1e88e5;
             transform: translateY(-3px);
         }
 
@@ -103,12 +153,21 @@
             color: #b0bec5;
             padding: 10px;
             border-top: 1px solid rgba(255, 255, 255, 0.2);
+            z-index: 1;
         }
 
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Decorative Elements -->
+        <div class="decorative"></div>
+        <div class="decorative"></div>
+        <div class="decorative"></div>
+        <div class="decorative"></div>
+        <div class="decorative"></div>
+        <div class="decorative"></div>
+
         <div class="header">
             <h1>Litera Literature Fest</h1>
             <p>Hosted by SAFI Readers' Forum and RAFTHA Students' Union</p>
@@ -116,11 +175,10 @@
         <div class="content">
             <div class="description">
                 <h2>What is LLF?</h2>
-                <p>Litera Literature Fest (LLF) is an exciting two-day event happening on February 24 and 25 at SAFI College. Organized by the SAFI Readers' Forum in association with the RAFTHA Students' Union, the festival celebrates literature and creativity.</p>
-                <p>Attendees can look forward to thought-provoking sessions, hands-on workshops, lively panel discussions, and the presence of notable guests ready to inspire budding writers and avid readers.</p>
-                <p>Join us for this unforgettable celebration of literature, uniting book lovers from all walks of life!</p>
+                <p>Litera Literature Fest (LLF) is a two-day event happening on February 24 and 25 at SAFI College. Organized by the SAFI Readers' Forum in association with the RAFTHA Students' Union, the festival celebrates literature and creativity.</p>
+                <p>With thought-provoking sessions, hands-on workshops, and lively panel discussions, LLF is set to inspire writers and readers alike. Join us for this unforgettable celebration!</p>
             </div>
-            <p>Interested in showcasing your stall? Proceed with the registration below:</p>
+            <p>Interested in showcasing your stall? Register below:</p>
             <div class="buttons">
                 <a href="https://forms.gle/pbEXyp18r2fB6tLAA" target="_blank">Registration for SAFI Students</a>
                 <a href="https://forms.gle/UbQc9AZLCW5dxs4aA" target="_blank">Registration for Individuals Outside SAFI</a>
